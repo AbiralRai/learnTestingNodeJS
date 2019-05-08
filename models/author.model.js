@@ -4,7 +4,7 @@ const Schema = mongoose.Schema;
 //Create Schema and Model
 const BookSchema = new Schema({
     title: String,
-    page: Number
+    pages: Number
 });
 
 const AuthorSchema = new Schema({
