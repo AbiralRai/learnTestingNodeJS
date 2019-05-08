@@ -1,0 +1,23 @@
+{
+  "name": "mongodb-playlist",
+  "version": "1.0.0",
+  "description": "Mongo tutorials",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamshaunjp/mongodb-playlist.git"
+  },
+  "author": "abi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iamshaunjp/mongodb-playlist/issues"
+  },
+  "homepage": "https://github.com/iamshaunjp/mongodb-playlist#readme",
+  "dependencies": {
+    "mocha": "^6.1.4",
+    "mongoose": "^5.5.6"
+  }
+}
