@@ -8,7 +8,8 @@ describe('Deleting records', () => {
     let mario;
     beforeEach((done) => {
         mario = new MarioChar({
-            name: 'Mario'
+            name: 'Mario',
+            weight: 50
         });
 
         mario.save().then(() => {
@@ -28,5 +29,16 @@ describe('Deleting records', () => {
             })
         })
     })
+
+    it('Increment every weight by 1', done => {
+
+        MarioChar.update({}, { $inc: { weight: 1 } }).then(() => {
+            MarioChar.findOne({ name: 'Mario' }).then(result => {
+                assert(result.weight !== mario.weight);
+                done();
+            })
+        })
+
+    });
 
 });
